@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<link rel="sortcut icon" href="imagens/logo.png" type="image/png"/>
+	<link rel="stylesheet" type="text/css" href="Alpha-builders.css">
+	<title>Alpha Builders</title>
+</head>
+<body>
+
+	<header>
+		<img src="imagens/ALPA.png" alt="logo" id="logo-maior">
+		<img src="imagens/logo.png" alt="logo" id="logo-menor">
+		<span class="material-icons" id="icon-menu">dehaze</span>
+		<div id="link-menu" class="desaparecer">
+			<a href="#">Início</a>
+			<a href="#planos-lista">Planos e Preços</a>
+			<a href="#sobre-lista">Sobre</a>
+			<a href="#membros-lista">Equipe</a>
+			<a href="#contatos-lista">Contato</a>
+			<a href="#div-faq">FAQ</a>
+		</div>
+	</header>
+
+	<div class="divconhecatitulo">
+		<p>Conheça<br> a Alpha <br>Builders</p><span id="planos-lista"></span>
+	</div>
+	<div id="div-lista">
+		<div class="div-planos">
+			<div class="div-titulo">
+				<img src="imagens/planos_site.png">
+			</div>
+			<div class="div-fot">
+					<a href="#contatos-lista" onclick="escolherPlano(2)">Escolher Plano</a>
+			</div>
+		</div>
+		<div class="div-planos">
+			<div class="div-titulo">
+				<img src="imagens/planos_site1.png">
+			</div>
+			<div class="div-fot">
+					<a href="#contatos-lista" onclick="escolherPlano(3)">Escolher Plano</a>
+			</div>
+		</div>
+		<div class="div-planos">
+			<div class="div-titulo">
+				<img src="imagens/planos_site2.png">
+			</div>
+			<div class="div-fot">
+					<a href="#contatos-lista" onclick="escolherPlano(4)">Escolher Plano</a>
+			</div>
+		</div>
+		<div class="div-planos">
+			<div class="div-titulo">
+				<img src="imagens/planos_site.png">
+			</div>
+			<div class="div-fot">
+					<a href="#contatos-lista" onclick="escolherPlano(2)">Escolher Plano</a>
+			</div>
+		</div>
+		<div class="div-planos">
+			<div class="div-titulo">
+				<img src="imagens/planos_site1.png">
+			</div>
+			<div class="div-fot">
+					<a href="#contatos-lista" onclick="escolherPlano(3)">Escolher Plano</a>
+			</div>
+		</div>
+		<div class="div-planos">
+			<div class="div-titulo">
+				<img src="imagens/planos_site2.png">
+			</div>
+			<div class="div-fot">
+					<a href="#contatos-lista" onclick="escolherPlano(4)">Escolher Plano</a>
+			</div>
+			<span id="sobre-lista"></span>
+		</div>
+	</div>
+<div class="divsobrefundo">
+		<p class="sobretitulo">
+			<br>
+			Sobre a Alpha Builders
+		</p>
+		<p class="sobretexto">
+			<br>
+			Alpha Builders é uma agência que tem como foco principal a criação de sites para empresas que 
+			estão querendo entrar no ramo web, sejam elas grandes (que não tem um site para atendimento online) 
+			ou pequenas que queiram entrar no mundo web. Visto que existem algumas dificuldades no funcionamento 
+			de empresas somente com o atendimento físico, nossa empresa se propõe a expandir os negócios das 
+			empresas através de sites com várias funcionalidades, com o objetivo de ter a melhor experiência 
+			ao comunicar-se com seus clientes.
+			<span id="membros-lista"></span>
+		</p>
+	</div>	
+<div id="h1-pessoa">
+	<h1>MEMBROS</h1>
+</div>
+
+<div id="membros">
+<div id="links">
+	<div onmouseover="mudarEquipe()"><img id="link-imagem"src="imagens/logo.png"></div>
+	<div class="links-div" onmouseover="mudarPessoa('caua.png','Cauã Reimond','Líder da Agência, Cauã Reimond de Lima Almeida, tem como função conversar diretamente com os clientes, desenvolver a ideia e repassar para os progamadores, João Fernandes e Marcos V. Santos. <br>Porém perde cerca de 12hrs do dia, conversando com &quot;mina do insta 1&quot; &quot;mina do insta 2&quot; &quot;mina do insta 3&quot; &quot;mina do insta ..&quot; &quot;mina do insta n&quot;')"><a>Cauã Reimond</a></div>
+	<div class="links-div" onmouseover="mudarPessoa('maycon.png','José Maycon','Fundador e Líder da AAPA (Associação dos Assassinos de Pai Anônimos), José Maycon Carvalho Barbosa é responsável por motivar o designer (Cauã R.) para que trabalhe na base do ódio. <br>Além de ajudar na descontração da equipe, melhorando o ânimo dela e na rentabilidade da agência, mas com impactos negativos, como por exemplo, às vezes estressando todo o time')"><a>José Maycon</a></div> 
+	<div class="links-div" onmouseover="mudarPessoa('joao.png','João Fernandes','Desenvolvedor de HTML e Css, João Fernandes Santos Filho designa uma função muito importante na equipe, além de &quot;dar um empurrãozinho na equipe&quot;, ele consegue facilmente desenvolver qualquer tipo de HTML e Css escolhido pelo cliente, sem dificuldade nenhuma. <br>Uma frase bastante famosa dele é &quot;Nem o céu é o limite quando os sonhos são maiores que o próprio universo&quot;')"><a>João Fernandes</a></div>
+	<div class="links-div" onmouseover="mudarPessoa('japa.png','Marcos V. Santos','Marcos Vinicius Santos, mais conhecido aqui na agência como 2D>>3D, tem a função de desenvolvedor HTML, Css e Javascrippt. Geralmente não dorme e tem uma habilidade inigualável de fazer qualquer coisa relacionada a programação. <br>Porém, como o líder da agência também perde bastante parte do seu tempo conversando com meninas, mas dessa vez 2D')"><a>Marcos V. Santos</a><span id="contatos-lista"></span></div> 	 	
+</div>	
+
+<div id="imagem-hid">
+	<img src="imagens/fundo-div.jpg" id="img">
+</div>
+<div id="conteudo-pessoa">
+	<h1 id="titulo-pessoa">Alpha Builders</h1>
+	<p id="sobre-pessoa"></p>
+</div>
+<div id="imagem-equipe">
+	<img src="imagens/equipeAB.png">
+</div>
+</div>	
+<div id="solicitarorcamento">
+		<div class="vamosconversar">
+			<h2>
+				Fale conosco
+			</h2>
+			<p> 
+				<img src="imagens/whatsapp.png" class="tamanhowhatsapp"> &nbsp;&nbsp;&nbsp; (79) 99995-7438
+			</p>
+			<p> 
+				<img src="imagens/email.png" class="tamanhoemail"> &nbsp;&nbsp;&nbsp; cauasafadao1@gmail.com
+			</p>
+		</div>
+		<div class="formulario">
+			<form>
+				<div class="divnome">
+					<input name="nome" type="text" class="nome" placeholder="Nome" id="placenome">
+				</div>
+				<div class="divemail">
+					<input name="email" type="text" class="email" placeholder="Email" id="placeemail">
+				</div>
+				<div class="divtelefone">
+					<input name="numero" type="text" class="telefone" placeholder="Telefone" maxlength="11" id="placetelefone">
+				</div>
+				<div class="divmensagem">
+					<textarea name="mensagem" class="mensagem" placeholder="Digite sua mensagem aqui" id="placedigite"></textarea>
+				</div>
+				<div class="divplanos">
+					<select name="planos" id="planos-select">
+						<option value="1"> Escolha o plano</option>
+						<option value="2"> Plano Alpha </option>
+						<option value="3"> Plano Beta </option>
+						<option value="4"> Plano Ômega </option>
+					</select>
+				</div>
+				<div class="divenviar">
+					<input name="enviar" type="submit" class="enviar" value="Enviar">
+				</div>
+			</form>
+		</div>
+</div>
+	<div id="div-faq">
+		<h1 id="titulo-faq">PERGUNTAS FREQUENTES</h1>
+		<button class="perguntas">Quais tipos de sites vocês desenvolvem?​</button>
+		<div class="repostas">
+			<p><br>Somos uma agência de criação de sites e temos 3 tipos de site: Site por assinatura, site de pagamento único e site de vendas online.<br><br></p>
+		</div>
+		<button class="perguntas">Quais são as etapas para ter a criação do site?</button>
+		<div class="repostas">
+			<p><br>O processo para a criação de sites é bem simples. Você solicitará o contato de nossa equipe, fará o pagamento e preencherá um questionário sobre as suas preferências e em poucos dias você receberá seu site. Nos planos Beta e Ômega existe a opção de acessar e visualizar a construção do site online e com suporte em chat dentro da plataforma.<br><br></p>
+		</div>
+		<button class="perguntas">Vou conseguir fazer alterações no meu próprio site sem dificuldades?</button>
+		<div class="repostas">
+			<p><br>Após finalizar o site, deixamos preparado para você uma interface amigável. Você terá facilidade para editar seu site e expandi-lo e além disso, nós vamos te orientar e prestar um suporte grátis nos 10 primeiros dias após a entrega.<br><br></p>
+		</div>
+		<button class="perguntas">Meu site vai funcionar em smartphone e tablet?</button>
+		<div class="repostas">
+			<p><br>Sim, todos os nossos sites são responsivos, ou seja, funcionará em dispositivos diferentes: PC, Tablet e Smartphone. Assim, o usuário terá a melhor experiência independente do dispositivo que estiver utilizando ao acessar o site.<br><br></p>
+		</div>
+		<button class="perguntas">Qual será meu canal de contato durante o processo de criação do site?</button>
+		<div class="repostas">
+			<p><br>Após a contratação do desenvolvimento do site você poderá acompanhar e tirar suas dúvidas em nossos canais de atendimento (telefone ou email).<br><br></p>
+		</div>
+	</div>
+
+	<footer>
+        <p>
+		<br>
+            <a href="https://twitter.com/AlphaBuilders_" target="blank"> <img src="imagens/twitter.webp"> </a>
+            <a href="https://www.instagram.com/alphabuilders_/" target="blank"> <img src="imagens/instagram.webp"> </a>
+        </p>
+            © 2021 Todos Direitos Reservados - Agência Alpha Builders
+    </footer>
+<script type="text/javascript">
+	var x = 0;
+	var menulink = document.getElementById('link-menu');
+	var menu = document.getElementById('icon-menu');
+	menu.addEventListener("click", function(){
+		if (x == 0){
+			menulink.classList.toggle("desaparecer");
+			menu.innerHTML  = "close";
+			x = 1;
+		} else{
+			menulink.classList.toggle("desaparecer");
+			menu.innerHTML  = "dehaze";
+			x = 0;
+		}
+	});
+	//CODIGO DO FAQ
+	var acc = document.getElementsByClassName("perguntas");
+	var i;
+
+	for (i = 0; i < acc.length; i++){
+ 	 acc[i].addEventListener("click", function(){
+ 	    this.classList.toggle("selecionado");
+ 	    var repostas = this.nextElementSibling;
+  		if (repostas.style.maxHeight) {
+	       	repostas.style.maxHeight = null;
+  	  } else {
+ 	     repostas.style.maxHeight = repostas.scrollHeight + "px";
+    } 
+  });
+ 	 //CODIGO DO MEMBROS
+ 	 function mudarPessoa(img, nome, sobre){
+ 	 	document.getElementById("imagem-equipe").style.display = "none";
+ 	 	document.getElementById("img").style.display = "block";
+ 	 	document.getElementById("sobre-pessoa").style.display = "block";
+		document.getElementById("img").setAttribute("src", "imagens/"+img); 
+		document.getElementById("titulo-pessoa").innerHTML = (nome);
+		document.getElementById("sobre-pessoa").innerHTML = (sobre);
+	}
+	function mudarEquipe(){
+		document.getElementById("imagem-equipe").style.display = "block";
+		document.getElementById("titulo-pessoa").innerHTML ="Alpha Builders";
+		document.getElementById("img").style.display = "none";
+		document.getElementById("sobre-pessoa").style.display = "none";
+	}
+	//codigo planos
+	function escolherPlano(valor){
+		document.getElementById('planos-select').value = valor;
+	}
+}
+</script>
+</body>
+</html>

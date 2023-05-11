@@ -1,0 +1,599 @@
+*{
+		padding:0;
+		margin:0;
+		box-sizing: border-box; 
+	}
+	html{
+		  scroll-behavior: smooth;
+		  font-family: 'Roboto', sans-serif;
+	}
+	body{
+		background-image: url("imagens/fundo.jpg");
+		background-attachment: fixed;
+		background-size: cover;	
+		scroll-behavior: smooth;
+		padding-top: 100px;
+		width: 100%;
+	}
+	/* CSS do Header*/
+	header{
+		background-color: black;
+		width: 100%;
+		height: auto;
+		position: fixed;
+		top: 0;
+	}
+	header img{
+		margin-left:5px;
+		margin-top:10px;
+		float:left;
+	}
+	
+	#link-menu{
+		height: 100%;
+		float: right;
+		width: 600px;
+	}
+	#link-menu a{
+		display: inline-block;
+		color:white;
+		padding: 6% 3% 5%;
+		text-decoration:none;
+
+	}
+	#link-menu a:hover{
+		background-color: white;
+		color: black;
+		text-decoration:underline;
+	}
+	#logo-menor{
+		display: none;
+	}
+	#icon-menu{
+		padding: 20px;
+		color: white;
+		font-size: 50px;
+		float: right;
+		display: none;
+	}
+	/* CSS dos planos  */
+	.div-planos{
+		width: 25%;
+		height: 400px;
+		background-color: black;
+		color: white;
+		margin: 4.16%;
+		float:left;
+		border: 1px solid black;
+		text-align: center;
+	}
+	.div-titulo{
+		width: 100%;
+		height: 300px;
+		background-color: white;
+	}
+	.div-fot{
+		margin-top: 40px;
+		width: 100%;
+	}
+	.div-fot a{
+		padding: 20px;
+		background-color: green;
+		border-radius: 3px;
+		color: white;
+		text-decoration: none;
+	}
+	.div-fot a:hover{
+		background-color: white;
+		color: green;
+	}
+	.div-titulo img{
+		width: 100%;
+		height: 300px;	
+	}
+	/* CSS do rodape */
+	footer {
+		float: left;
+		color:black;
+		width: 100%;
+		height: 100px;
+		background-color: white;
+		text-align: center;
+		font-family: 'Nunito', sans-serif;
+}
+	footer img{
+		width:30px;
+		height:30px;
+
+	}
+	/* CSS membros*/
+	#h1-pessoa{
+		background-color: black;
+		text-align: center;
+		color: white;
+		float: left;
+		width: 100%;
+		padding: 30px;
+	}
+	#membros{
+		background-color: white;
+		height: auto;
+		width: 100%;
+		float: left;
+		color: white;
+		background-color: black;
+	}
+	#links{
+  	width: 250px;
+  	background-color: black;
+  	color: white;
+  	height:  450px;
+  	font-weight: bold;
+  	float: left;
+  }
+  .links-div {
+  	text-align: center;
+  	padding: 35px;
+  	width: 100%;
+  	transition: 0.5s;
+  }
+  .links-div:hover{
+  	background-color: white;
+  	color: black;
+  }
+  #links img{
+  	margin-left: 35%;
+	padding: 0px;	
+	width: 80px;
+	height: 72px;
+  }
+#titulo-pessoa{
+	text-align: center;
+}
+#sobre-pessoa{
+	margin-right: 20px;
+}
+#imagem-hid img{
+	float: left;	
+	margin: 40px;	
+	height: 400px;
+	width: 300px;
+	display: none;
+}		
+#imagem-equipe{
+	margin-left: 33%;
+	margin-bottom: 22px;
+}
+
+
+/* CSS FORM */
+h2 {
+	text-align: center;
+	color: #98a6c5;
+	font-size: 40px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+#solicitarorcamento {
+	width: 100%;
+	height: auto;
+	float: left;
+	background-color: #101010;
+	padding-bottom: 10px;
+}
+
+.formulario {
+    width: 50%;
+    height: 450px;
+    float: left;
+    background-color: #101010;
+    background-color: #101010;
+}
+.vamosconversar {
+	width: 50%;
+	height: auto;
+	color: white;
+	background-color: #101010;
+	float: left;
+}
+.nome {
+	width: 80%;
+	color:white;
+	background-color: #101010;
+	border-top: #101010;
+	border-left: #101010;
+	border-right: #101010;
+	border-bottom: 2px solid white;
+}
+
+.email {
+	width: 100%;
+	color:white;
+	background-color: #101010;
+	border-top: #101010;
+	border-left: #101010;
+	border-right: #101010;
+	border-bottom: 2px solid white;
+}
+
+.telefone {
+	width: 100%;
+	color:white;
+	background-color: #101010;
+	border-top: #101010;
+	border-left: #101010;
+	border-right: #101010;
+	border-bottom: 2px solid white;
+}
+
+.mensagem {
+	color: white;
+	width: 80%;
+	height: 150px;
+	padding: 15px 15px;
+	resize: none;
+	background-color: #101010;
+	border-top: #101010;
+	border-left: #101010;
+	border-right: #101010;
+	border-bottom: 2px solid white;
+	outline: none;
+}
+
+.enviar {
+  background-color: white;
+  width: 80%;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input[type=text] {
+  padding: 12px 15px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.divnome {
+	margin-top: 40px;
+	width: 100%;
+	height: 40px;
+}
+
+.divemail {
+	margin-top: 10px;
+	width: 350px;
+	height: 40px;
+	float: left;
+}
+
+.divtelefone {
+	width: 180px;
+	height: 40px;
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+}
+
+.divmensagem {
+	width: 100%;
+	height: 150px;
+	margin-top: 60px;
+}
+.divplanos {
+	width: 80%;
+	height: 50px;
+}
+.divplanos select {
+	background: #101010;
+	border: none;
+	outline: none;
+    border-bottom: 2px solid white;
+	width: 100%;  
+	height: 50px;
+	font-family: arial;
+	font-size: 13px;
+	padding: 0px 12px;
+	color: white;
+	cursor: pointer;
+}
+.divenviar {
+	width: 100%;
+	margin-top:30px;
+}
+
+#placenome::placeholder {
+    color: white;
+}
+
+#placeemail::placeholder {
+    color: white;
+}
+
+#placetelefone::placeholder {
+    color: white;
+}
+
+#placedigite::placeholder {
+    color: white;
+	font-family: arial;
+}		
+/* CSS DO FAQ*/
+#div-faq{
+	width: 100%;
+	float: left;
+	height: auto;
+	background-color: black;
+	color:#98a6c5;
+	padding-top: 100px;
+}
+.perguntas {
+  background-color: #eee;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+
+}
+
+.repostas{
+  padding: 0 30px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.perguntas:hover ,.selecionado{
+	background-color: #C4ECA8;
+	max-height: 100px;
+}
+
+#titulo-faq{
+	background-color: white;
+	color:black;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+
+.divconhecatitulo{
+	float: left;
+    width: 100%;
+    height: 400px;
+	color: white;
+	font-size: 100px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+.divconhecatitulo p{
+	margin-left: 100px;
+}
+
+.divsobrefundo {
+	float: left;
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+	background-color: white;
+}
+
+.sobretitulo {
+	color: #00193f;
+	font-size: 40px;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+
+.sobretexto {
+	color: #7a7a8e;
+	font-size: 20px;
+	font-family: arial;
+	text-align: justify;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.tamanhowhatsapp {
+	margin-left: 20%;
+	margin-top: 20px;
+	width: 40px;
+	height: 30px;
+
+}
+
+.tamanhoemail {
+	margin-left: 20%;
+	margin-top: 20px;
+	width: 40px;
+	height: 30px;
+}
+/* CSS RESNPOSIVO*/
+@media only screen and (max-width: 915px) {
+  body{
+  	padding-top: 0px;
+  }
+  header{
+  	position: static;
+   }
+  header img{
+  	margin:0;
+	width: 100%;
+	height: 100px;
+	background-color: black;
+	}
+	
+	#link-menu{
+		height: auto;
+		width: 100%;
+		text-align: center;
+		background-color: black;
+
+	}
+	#link-menu a{
+		display: inline-block;
+		color:white;
+		width: 100%;
+		padding: 20px;
+		text-decoration:none;
+
+	}
+	.div-planos{
+		width: 40%;
+		height: 400px;
+		margin: 5%;
+	}
+	#links{
+		width: 50%;
+	}
+	#imagem-hid{
+		width: 50%;
+		float: left;		
+
+	}
+	#imagem-hid img{
+		height: 400px;
+		width: 70%;
+		margin: 40px;
+	}
+	#imagem-equipe{
+	margin-left: 0%;
+}
+#imagem-equipe img{
+	width: 100%;
+	}
+#conteudo-pessoa{
+	text-align: center;
+	display: inline-block;
+	background-color: blue;
+	width: 100%;
+
+}
+.divnome {
+	margin-top: 40px;
+	width: 100%;
+	height: 40px;
+}
+
+.divemail {
+	margin-top: 10px;
+	width: 100%;
+	height: 40px;
+}
+
+.divtelefone {
+	width: 100%;
+	height: 40px;
+	margin-top: 10px;
+	margin-left: 0px;
+}
+
+.divmensagem {
+	width: 100%;
+	height: 150px;
+	margin-top: 120px;
+}
+
+.divenviar {
+	width: 100%;
+	margin-top:10px;
+}
+.divplanos{
+	width: 90%;
+}
+.nome {
+width: 90%;
+}
+
+.email {
+width: 90%;
+}
+
+.telefone {
+width: 90%;
+}
+
+.mensagem {
+width: 90%;
+}
+
+.enviar {
+  width: 90%;
+}
+}
+@media only screen and (max-width: 600px) {
+	body{
+		padding-top: 100px;
+	}
+	#logo-maior{
+		display: none;
+	}
+	#logo-menor{
+		display: block;
+	}
+	header{
+		width: 100%;
+		height: 90px;
+		position: fixed;
+	}
+	header img{
+  		margin:0;
+		width: 120px;
+		height: 80px;
+		background-color: black;
+	}
+
+	#icon-menu{
+		display: block;
+	}
+	#icon-menu:hover{
+		background-color: white;
+		color: black;
+		cursor: pointer;
+	}
+.divconhecatitulo p{
+	text-align: center;
+	margin-left: 0px;
+}
+
+	#link-menu{
+		position: fixed;
+		right: 0;
+		top: 85px;
+		height: 100%;
+		width: 40%;
+		text-align: center;
+		float: right;
+	}
+	.desaparecer{
+		display: none;
+	}
+	.div-planos{
+		width: 80%;
+		height: 500px;
+		margin: 10%;
+	}
+	.div-titulo{
+		width: 100%;
+		height: 400px;
+	}
+	.div-titulo img{
+		width: 100%;
+		height: 100%;
+	}
+	.vamosconversar{
+		float: none;
+		width: 100%;
+	}
+	.formulario{
+		width: 100%;
+	}
+	.formulario div{
+		margin-left: 5%;
+	}
+}
